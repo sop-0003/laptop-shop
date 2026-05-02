@@ -8,9 +8,9 @@ export default defineConfig({
             input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: true,
         }),
-        react(),           // ← បន្ថែមសម្រាប់ React
+        react(),
     ],
     build: {
-        outDir: 'dist'     // ← បញ្ជាក់ថតលទ្ធផលសម្រាប់ Vercel
+        outDir: 'public/build',   // ← Laravel ប្រើ public/build
     },
 });
